@@ -66,7 +66,7 @@ void EnergyMonitor::currentTX(unsigned int _channel, double _ICAL)
 void EnergyMonitor::calcVI(unsigned int crossings, unsigned int timeout)
 {
   #if defined emonTxV3
-  int SupplyVoltage=3300;
+  int SupplyVoltage=400;
   #else
   int SupplyVoltage = readVcc();
   #endif
